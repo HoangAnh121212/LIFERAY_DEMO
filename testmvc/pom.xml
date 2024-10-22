@@ -22,6 +22,13 @@
 			<id>standalone</id>
 			<dependencyManagement>
 				<dependencies>
+					<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>8.0.33</version>
+					</dependency>
+
 					<dependency>
 						<groupId>com.liferay.portal</groupId>
 						<artifactId>release.portal.bom</artifactId>
@@ -93,6 +100,13 @@
 					</execution>
 				</executions>
 				<dependencies>
+					<!-- https://mvnrepository.com/artifact/com.liferay/com.liferay.ant.bnd -->
+					<dependency>
+						<groupId>com.liferay</groupId>
+						<artifactId>com.liferay.ant.bnd</artifactId>
+						<version>3.2.12</version>
+					</dependency>
+
 					<dependency>
 						<groupId>biz.aQute.bnd</groupId>
 						<artifactId>biz.aQute.bndlib</artifactId>

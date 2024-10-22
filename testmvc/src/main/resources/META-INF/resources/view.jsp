@@ -1,5 +1,15 @@
-<%@ include file="/init.jsp" %>
+<%@ page import="java.util.List" %>
+<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
+<%@ taglib uri="http://java.sun.com/portlet" prefix="portlet" %>
+<portlet:defineObjects />
 
-<p>
-	<b><liferay-ui:message key="testmvc.caption"/></b>
-</p>
+<%
+	List<String> dataList = (List<String>) renderRequest.getAttribute("dataList");
+%>
+
+<h1>Data from Database</h1>
+<ul>
+	<% for (String data : dataList) { %>
+	<li><%= data %></li>
+	<% } %>
+</ul>
